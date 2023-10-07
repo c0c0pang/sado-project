@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Cafe24";
+  src: url("./fonts/Cafe24Ssurround-v2.0.ttf");
+}
