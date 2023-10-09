@@ -50,6 +50,10 @@ export const DocModalDialogSelectDiv = styled.div`
     :hover{
         color: white;
     }
+    .Link{
+        text-decoration: none;
+        color: black;
+    }
 `
 export const DocModalDialogSelectText = styled(CafeText)`
     font-size: 18px;
