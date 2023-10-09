@@ -41,3 +41,15 @@
   font-family: "Cafe24";
   src: url("./fonts/Cafe24Ssurround-v2.0.ttf");
 }
+@font-face {
+  font-family: "GmarketL";
+  src: url("./fonts/GmarketSansLight.otf");
+}
+@font-face {
+  font-family: "GmarketM";
+  src: url("./fonts/GmarketSansMedium.otf");
+}
+@font-face {
+  font-family: "GmarketB";
+  src: url("./fonts/GmarketSansBold.otf");
+}
