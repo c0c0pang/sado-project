@@ -3,6 +3,7 @@ import { DocModalDialogTitle, DocModalDialog, DocModalDialogSelectDiv, DocModalD
 import { selectList } from '../data/DocData'
 import { useSetRecoilState } from 'recoil'
 import { docHandler } from '../atom/dialogAtom'
+import { Link } from 'react-router-dom'
 function DocModal() {
     const setDocButtonState = useSetRecoilState(docHandler)
     return (
@@ -11,7 +12,9 @@ function DocModal() {
             <DocModalDialogSelectDiv>
                 {selectList.map((e, index) => {
                     return (
-                        <DocModalDialogSelectText key={index} color={e.color} className={'list-' + index}>{e.name}</DocModalDialogSelectText>
+                        <Link to={"/doc/" + e.name} className='Link'>
+                            <DocModalDialogSelectText key={index} color={e.color} className={'list-' + index}>{e.name}</DocModalDialogSelectText>
+                        </Link>
                     )
                 })}
             </DocModalDialogSelectDiv>
